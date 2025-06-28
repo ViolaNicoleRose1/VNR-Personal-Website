@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Book Recommendations | Viola Nicole Rose</title>
     <style>
         body {
@@ -47,6 +47,19 @@
             border-radius: 6px;
         }
 
+        /* Color code by grade */
+        .kindergarten li {
+            color: #008080; /* teal */
+        }
+
+        .firstgrade li {
+            color: #D2691E; /* deep orange */
+        }
+
+        .secondgrade li {
+            color: #4169E1; /* royal blue */
+        }
+
         a.back {
             display: block;
             text-align: center;
@@ -59,6 +72,7 @@
             width: fit-content;
             margin-left: auto;
             margin-right: auto;
+            font-weight: bold;
         }
 
         a.back:hover {
@@ -78,7 +92,7 @@
     </ul>
 
     <h2>Kindergarten</h2>
-    <ul>
+    <ul class="kindergarten">
         <li>Brown Bear, Brown Bear, What Do You See? by Bill Martin Jr. & Eric Carle</li>
         <li>Chicka Chicka Boom Boom by Bill Martin Jr. & John Archambault</li>
         <li>Pete the Cat: I Love My White Shoes by James Dean & Eric Litwin</li>
@@ -87,7 +101,7 @@
     </ul>
 
     <h2>1st Grade</h2>
-    <ul>
+    <ul class="firstgrade">
         <li>Frog and Toad Are Friends by Arnold Lobel</li>
         <li>Elephant & Piggie series by Mo Willems</li>
         <li>The Cat in the Hat by Dr. Seuss</li>
@@ -96,7 +110,7 @@
     </ul>
 
     <h2>2nd Grade</h2>
-    <ul>
+    <ul class="secondgrade">
         <li>Henry and Mudge series by Cynthia Rylant</li>
         <li>Magic Tree House series by Mary Pope Osborne</li>
         <li>Amelia Bedelia by Peggy Parish</li>
