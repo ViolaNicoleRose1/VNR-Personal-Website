@@ -8,14 +8,13 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      /* Ombre background pink to turquoise */
       background: linear-gradient(135deg, #ffccdd, #66cccc);
       min-height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
       padding: 20px;
-      color: #002366; /* dark blue text for contrast */
+      color: #002366;
     }
 
     h1 {
@@ -58,43 +57,6 @@
       margin-right: auto;
     }
 
-    .gallery {
-      max-width: 900px;
-      width: 90%;
-      margin-bottom: 50px;
-    }
-
-    .gallery h2 {
-      text-align: center;
-      margin-bottom: 25px;
-      color: #002366;
-      font-size: 2rem;
-    }
-
-    figure {
-      display: inline-block;
-      margin: 15px 20px;
-      text-align: center;
-    }
-
-    figure img {
-      width: 300px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.15);
-      transition: transform 0.3s ease;
-      cursor: pointer;
-    }
-
-    figure img:hover {
-      transform: scale(1.05);
-    }
-
-    figcaption {
-      margin-top: 8px;
-      font-weight: bold;
-      color: #004466;
-    }
-
     .back-home {
       margin: 30px 0 40px;
       font-size: 1.1rem;
@@ -117,7 +79,7 @@
     }
 
     @media (max-width: 650px) {
-      figure img, .top-photo {
+      .top-photo {
         width: 90vw;
       }
     }
@@ -145,27 +107,8 @@
     title="Breathitt Elementary School Location">
   </iframe>
 
-  <section class="gallery">
-    <h2>My Photo Gallery</h2>
-
-    <figure>
-      <img src="Family Fun Night 2025.png" alt="Family Fun Night 2025" title="Family Fun Night 2025">
-      <figcaption>Family Fun Night 2025</figcaption>
-    </figure>
-
-    <figure>
-      <img src="Open House 2025.jpg" alt="Open House 2025" title="Open House 2025">
-      <figcaption>Open House 2025</figcaption>
-    </figure>
-
-    <figure>
-      <img src="Literacy Night 2025.jpg" alt="Literacy Night 2025" title="Literacy Night 2025">
-      <figcaption>Literacy Night 2025</figcaption>
-    </figure>
-  </section>
-
   <div class="back-home">
-    <a href="index.html">&larr; Back to Homepage</a>
+    <a href="gallery.html">View My Photo Gallery &rarr;</a>
   </div>
 
 </body>
