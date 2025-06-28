@@ -51,13 +51,22 @@
 
     .intro p {
       font-size: 1.3rem;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
+      line-height: 1.5;
     }
 
     .quote {
       font-style: italic;
       font-size: 1.2rem;
+      margin: 20px 0 30px;
       color: #004080;
+    }
+
+    .intro img {
+      width: 250px;
+      max-width: 90vw;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0, 64, 128, 0.4);
       margin-bottom: 30px;
     }
 
@@ -87,23 +96,6 @@
       transform: scale(1.05);
     }
 
-    .purpose {
-      max-width: 700px;
-      text-align: center;
-      margin-top: 40px;
-      color: #003366;
-    }
-
-    .purpose h2 {
-      font-size: 2rem;
-      margin-bottom: 12px;
-    }
-
-    .purpose p {
-      font-size: 1.15rem;
-      line-height: 1.5;
-    }
-
     @media (max-width: 480px) {
       .btn-container {
         flex-direction: column;
@@ -128,20 +120,16 @@
 
   <section class="intro">
     <h1>Welcome to My Website</h1>
-    <p>This personal website highlights my passion for education, sharing my teaching experience, and celebrating the joy of learning through photos and stories.</p>
+    <img src="2024-25 Pic.JPG" alt="Photo of Viola Nicole Rose" />
+    <p>
+      This personal website highlights my passion for education, sharing my teaching experience, and celebrating the joy of learning through photos and stories. It’s a window into my journey as an educator and librarian, designed to connect with others who share a passion for literacy and learning.
+    </p>
     <div class="quote">“Every word a child reads is a step toward a brighter future.”</div>
 
     <div class="btn-container">
       <a href="experience.html" class="btn">View My Experience</a>
       <a href="myphotogallery.html" class="btn">See My Photo Gallery</a>
     </div>
-  </section>
-
-  <section class="purpose">
-    <h2>About This Site</h2>
-    <p>
-      This site is a window into my journey as an educator and librarian. It’s designed to share my experience, showcase moments from my classroom and community, and connect with others who share a passion for literacy and learning.
-    </p>
   </section>
 
 </body>
