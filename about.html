@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Viola Nicole Rose | About</title>
+  <title>About | Viola Nicole Rose</title>
   <style>
     body {
       margin: 0;
@@ -25,86 +25,58 @@
     }
 
     nav a {
-      margin: 0 15px;
+      margin: 0 12px;
       text-decoration: none;
       color: #002366;
       font-weight: bold;
       padding: 8px 16px;
       border-radius: 8px;
-      background: rgba(255, 255, 255, 0.7);
+      background: rgba(255,255,255,0.7);
       transition: background-color 0.3s ease;
     }
 
     nav a:hover {
-      background: rgba(255, 255, 255, 1);
+      background: rgba(255,255,255,1);
     }
 
-    .intro {
-      max-width: 700px;
-      text-align: center;
-    }
-
-    .intro h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-    }
-
-    .intro p {
-      font-size: 1.3rem;
-      margin-bottom: 15px;
-      line-height: 1.5;
-    }
-
-    .quote {
-      font-style: italic;
-      font-size: 1.2rem;
-      margin: 20px 0 30px;
-      color: #004080;
-    }
-
-    .intro img {
-      width: 250px;
-      max-width: 90vw;
-      border-radius: 15px;
-      box-shadow: 0 0 15px rgba(0, 64, 128, 0.4);
+    h1 {
       margin-bottom: 30px;
+      font-size: 2.5rem;
     }
 
-    .btn-container {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      flex-wrap: wrap;
+    .content {
+      max-width: 800px;
+      text-align: center;
+      background: rgba(255,255,255,0.85);
+      padding: 25px 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.15);
     }
 
-    .btn {
-      background-color: #004080;
-      color: white;
+    .content img {
+      width: 200px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .back-home {
+      margin: 40px 0;
+    }
+
+    .back-home a {
       text-decoration: none;
-      padding: 15px 30px;
-      border-radius: 10px;
-      font-size: 1.2rem;
+      color: #002366;
       font-weight: bold;
-      box-shadow: 0 5px 15px rgba(0, 64, 128, 0.4);
-      transition: background-color 0.3s ease, transform 0.3s ease;
-      min-width: 200px;
-      display: inline-block;
+      border: 2px solid #002366;
+      padding: 8px 16px;
+      border-radius: 8px;
+      transition: background-color 0.3s, color 0.3s;
     }
 
-    .btn:hover {
-      background-color: #002a5c;
-      transform: scale(1.05);
-    }
-
-    @media (max-width: 480px) {
-      .btn-container {
-        flex-direction: column;
-      }
-
-      .btn {
-        min-width: auto;
-        width: 100%;
-      }
+    .back-home a:hover {
+      background: #002366;
+      color: white;
     }
   </style>
 </head>
@@ -112,26 +84,27 @@
 
   <nav>
     <a href="index.html">Home</a>
-    <a href="about.html">About</a>
     <a href="experience.html">Experience</a>
-    <a href="contact.html">Contact</a>
-    <a href="books.html">Books</a>
     <a href="myphotogallery.html">Photo Gallery</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
   </nav>
 
-  <section class="intro">
-    <h1>Welcome to My Website</h1>
-    <img src="2024-25 Pic.JPG" alt="Photo of Viola Nicole Rose" />
-    <p>
-      This personal website highlights my passion for education, sharing my teaching experience, and celebrating the joy of learning through photos and stories. It’s a window into my journey as an educator and librarian, designed to connect with others who share a passion for literacy and learning.
-    </p>
-    <div class="quote">“Every word a child reads is a step toward a brighter future.”</div>
+  <h1>About Me</h1>
 
-    <div class="btn-container">
-      <a href="experience.html" class="btn">View My Experience</a>
-      <a href="myphotogallery.html" class="btn">See My Photo Gallery</a>
-    </div>
-  </section>
+  <div class="content">
+    <img src="2024-25 Pic.JPG" alt="Viola Nicole Rose" />
+    <p>
+      Hello! I’m a passionate educator with six years of experience teaching in the Breathitt County School District. I teach art at Highland Turner Elementary School and am working toward my Master’s in School Librarianship at Eastern Kentucky University.
+    </p>
+    <p>
+      I’m a proud mom and enjoy integrating creativity into literacy, riding ATVs, and making learning fun. Thank you for visiting—feel free to explore my experience or check out my photo gallery!
+    </p>
+  </div>
+
+  <div class="back-home">
+    <a href="index.html">&larr; Back to Homepage</a>
+  </div>
 
 </body>
 </html>
