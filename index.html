@@ -51,44 +51,21 @@
 
     .intro p {
       font-size: 1.3rem;
-      margin-bottom: 30px;
+      margin-bottom: 10px;
+    }
+
+    .quote {
       font-style: italic;
+      font-size: 1.2rem;
+      color: #004080;
+      margin-bottom: 30px;
     }
 
-    .photo {
-      width: 250px;
-      max-width: 90vw;
-      border-radius: 15px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.2);
-      margin: 30px auto;
-      display: block;
-    }
-
-    .fun-facts {
-      background: rgba(255, 255, 255, 0.85);
-      border-radius: 12px;
-      padding: 25px 30px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.15);
-      max-width: 700px;
-      margin: 30px auto;
-      color: #003366;
-      text-align: left;
-      font-size: 1.1rem;
-      line-height: 1.5;
-    }
-
-    .fun-facts ul {
-      margin: 0;
-      padding-left: 20px;
-    }
-
-    /* Optional button container styling if you want to keep the buttons */
     .btn-container {
       display: flex;
       justify-content: center;
       gap: 30px;
       flex-wrap: wrap;
-      margin-top: 40px;
     }
 
     .btn {
@@ -108,6 +85,23 @@
     .btn:hover {
       background-color: #002a5c;
       transform: scale(1.05);
+    }
+
+    .purpose {
+      max-width: 700px;
+      text-align: center;
+      margin-top: 40px;
+      color: #003366;
+    }
+
+    .purpose h2 {
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+
+    .purpose p {
+      font-size: 1.15rem;
+      line-height: 1.5;
     }
 
     @media (max-width: 480px) {
@@ -134,23 +128,20 @@
 
   <section class="intro">
     <h1>Welcome to My Website</h1>
-    <p><em>"Teaching is the greatest act of optimism." – Colleen Wilcox</em></p>
-
-    <img src="2024-25 Pic.JPG" alt="Viola Nicole Rose" class="photo" />
-
-    <div class="fun-facts">
-      <h2>Fun Facts About Me</h2>
-      <ul>
-        <li>I love integrating art and creativity into learning.</li>
-        <li>Passionate about literacy and library media.</li>
-        <li>Enjoy community events and family engagement.</li>
-      </ul>
-    </div>
+    <p>This personal website highlights my passion for education, sharing my teaching experience, and celebrating the joy of learning through photos and stories.</p>
+    <div class="quote">“Every word a child reads is a step toward a brighter future.”</div>
 
     <div class="btn-container">
       <a href="experience.html" class="btn">View My Experience</a>
       <a href="myphotogallery.html" class="btn">See My Photo Gallery</a>
     </div>
+  </section>
+
+  <section class="purpose">
+    <h2>About This Site</h2>
+    <p>
+      This site is a window into my journey as an educator and librarian. It’s designed to share my experience, showcase moments from my classroom and community, and connect with others who share a passion for literacy and learning.
+    </p>
   </section>
 
 </body>
