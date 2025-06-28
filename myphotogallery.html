@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Photo Gallery | Viola Nicole Rose</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ffccdd, #66cccc);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      color: #002366;
+    }
+
+    h1, h2 {
+      margin-top: 40px;
+      font-size: 2.5rem;
+      text-align: center;
+    }
+
+    .gallery {
+      max-width: 900px;
+      width: 90%;
+      margin-bottom: 50px;
+    }
+
+    .gallery h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #002366;
+      font-size: 2rem;
+    }
+
+    figure {
+      display: inline-block;
+      margin: 15px 20px;
+      text-align: center;
+    }
+
+    figure img {
+      width: 300px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    figure img:hover {
+      transform: scale(1.05);
+    }
+
+    figcaption {
+      margin-top: 8px;
+      font-weight: bold;
+      color: #004466;
+    }
+
+    .back-home {
+      margin: 30px 0 40px;
+      font-size: 1.1rem;
+      text-align: center;
+    }
+
+    .back-home a {
+      color: #002366;
+      text-decoration: none;
+      font-weight: bold;
+      border: 2px solid #002366;
+      padding: 8px 16px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .back-home a:hover {
+      background-color: #002366;
+      color: white;
+    }
+
+    @media (max-width: 650px) {
+      figure img {
+        width: 90vw;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Photo Gallery</h1>
+
+  <section class="gallery">
+    <h2>My Photo Gallery</h2>
+
+    <figure>
+      <img src="Family Fun Night 2025.png" alt="Family Fun Night 2025" title="Family Fun Night 2025">
+      <figcaption>Family Fun Night 2025</figcaption>
+    </figure>
+
+    <figure>
+      <img src="Open House 2025.jpg" alt="Open House 2025" title="Open House 2025">
+      <figcaption>Open House 2025</figcaption>
+    </figure>
+
+    <figure>
+      <img src="Literacy Night 2025.jpg" alt="Literacy Night 2025" title="Literacy Night 2025">
+      <figcaption>Literacy Night 2025</figcaption>
+    </figure>
+  </section>
+
+  <div class="back-home">
+    <a href="index.html">&larr; Back to Contact Page</a>
+  </div>
+
+</body>
+</html>
