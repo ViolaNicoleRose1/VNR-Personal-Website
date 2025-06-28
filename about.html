@@ -1,110 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About | Viola Nicole Rose</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
-      color: #002366;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 40px 20px;
-    }
+    <meta charset="utf-8" />
+    <title>About Me | Viola Nicole Rose</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: black;
+            background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+            background-size: 400% 400%;
+            animation: gradientFlow 15s ease infinite;
+            padding: 40px;
+            margin: 0;
+        }
 
-    nav {
-      width: 100%;
-      max-width: 900px;
-      margin-bottom: 40px;
-      text-align: center;
-    }
+        @keyframes gradientFlow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
 
-    nav a {
-      margin: 0 12px;
-      text-decoration: none;
-      color: #002366;
-      font-weight: bold;
-      padding: 8px 16px;
-      border-radius: 8px;
-      background: rgba(255,255,255,0.7);
-      transition: background-color 0.3s ease;
-    }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
 
-    nav a:hover {
-      background: rgba(255,255,255,1);
-    }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #002366;
+            font-weight: bold;
+            background: rgba(255, 255, 255, 0.6);
+            padding: 8px 16px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
 
-    h1 {
-      margin-bottom: 30px;
-      font-size: 2.5rem;
-    }
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.85);
+            color: #004080;
+        }
 
-    .content {
-      max-width: 800px;
-      text-align: center;
-      background: rgba(255,255,255,0.85);
-      padding: 25px 30px;
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.15);
-    }
+        h1, h2 {
+            text-align: center;
+            color: #002366;
+        }
 
-    .content img {
-      width: 200px;
-      border-radius: 50%;
-      margin-bottom: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    }
+        p.about-text {
+            max-width: 700px;
+            margin: 0 auto 40px auto;
+            line-height: 1.6;
+            font-size: 18px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            color: #002366;
+        }
 
-    .back-home {
-      margin: 40px 0;
-    }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 40px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            overflow: hidden;
+        }
 
-    .back-home a {
-      text-decoration: none;
-      color: #002366;
-      font-weight: bold;
-      border: 2px solid #002366;
-      padding: 8px 16px;
-      border-radius: 8px;
-      transition: background-color 0.3s, color 0.3s;
-    }
+        th, td {
+            border: 1px solid #999;
+            padding: 10px;
+            text-align: center;
+            color: #002366;
+        }
 
-    .back-home a:hover {
-      background: #002366;
-      color: white;
-    }
-  </style>
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 14px;
+            color: #002366;
+        }
+
+        .video-section {
+            text-align: center;
+            margin: 40px auto;
+            max-width: 1000px;
+        }
+
+        .video-section h2 {
+            font-weight: normal;
+            font-size: 28px;
+            margin-bottom: 20px;
+            padding: 0 20px;
+            color: #002366;
+        }
+
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .back-home {
+            text-align: center;
+            margin: 30px 0 20px 0;
+        }
+
+        .back-home a {
+            text-decoration: none;
+            font-weight: bold;
+            background: rgba(255, 255, 255, 0.6);
+            color: #002366;
+            padding: 10px 24px;
+            border-radius: 8px;
+            transition: background 0.3s ease, color 0.3s ease;
+            display: inline-block;
+        }
+
+        .back-home a:hover {
+            background: rgba(255, 255, 255, 0.85);
+            color: #004080;
+        }
+    </style>
 </head>
 <body>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="experience.html">Experience</a>
-    <a href="myphotogallery.html">Photo Gallery</a>
-    <a href="contact.html">Contact</a>
-    <a href="about.html">About</a>
-  </nav>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="experience.html">Experience</a>
+        <a href="myphotogallery.html">Photo Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+    </nav>
 
-  <h1>About Me</h1>
+    <h1>About Me</h1>
 
-  <div class="content">
-    <img src="2024-25 Pic.JPG" alt="Viola Nicole Rose" />
-    <p>
-      Hello! I’m a passionate educator with six years of experience teaching in the Breathitt County School District. I teach art at Highland Turner Elementary School and am working toward my Master’s in School Librarianship at Eastern Kentucky University.
+    <div style="text-align: center; margin-bottom: 30px;">
+        <img src="2024-25 Pic.JPG" alt="Viola Nicole Rose" 
+             style="max-width: 200px; border-radius: 50%; box-shadow: 0 0 10px rgba(0,0,0,0.2);" />
+    </div>
+
+    <p class="about-text">
+        Hello! I’m a passionate educator with six years of experience teaching in the Breathitt County School District. I teach art at Highland Turner Elementary School on Mondays, Wednesdays, and Fridays, and I am the library special class teacher at Breathitt Elementary School on Tuesdays and Thursdays.<br><br>
+
+        I’m currently working toward my Master’s degree and Rank 1 certification in School Librarianship at Eastern Kentucky University. Education and lifelong learning are truly close to my heart.<br><br>
+
+        Outside the classroom, I’m a proud mom to a wonderful 20-year-old daughter. I love spending time with family and friends, sharing lots of laughs along the way. Some of my favorite hobbies include reading, riding ATVs, swimming, going to the beach, and enjoying comedy shows. Life is better when you’re laughing and surrounded by good company!<br><br>
+
+        Thanks for stopping by — I’m excited to share my journey and connect with you.
     </p>
-    <p>
-      I’m a proud mom and enjoy integrating creativity into literacy, riding ATVs, and making learning fun. Thank you for visiting—feel free to explore my experience or check out my photo gallery!
-    </p>
-  </div>
 
-  <div class="back-home">
-    <a href="index.html">&larr; Back to Homepage</a>
-  </div>
+    <div class="video-section">
+        <h2>"Every child’s journey to reading is unique—each learns in their own way, and every one holds incredible potential waiting to be discovered"</h2>
+        <iframe src="https://biteable.com/watch/embed/4390274/02efda24fcd84d03aa68f0d45083e9f3" allowfullscreen="true" allow="autoplay"></iframe>
+        <p><a href="https://biteable.com/watch/4390274/02efda24fcd84d03aa68f0d45083e9f3" target="_blank" rel="noopener noreferrer">Digital Storytelling</a> on <a href="https://biteable.com" target="_blank" rel="noopener noreferrer">Biteable</a>.</p>
+    </div>
+
+    <h2>Special Class Library Schedule</h2>
+    <table>
+        <tr>
+            <th>Time</th>
+            <th>Grade</th>
+        </tr>
+        <tr>
+            <td>8:25 – 9:10</td>
+            <td>2nd Grade</td>
+        </tr>
+        <tr>
+            <td>9:15 – 10:00</td>
+            <td>1st Grade</td>
+        </tr>
+        <tr>
+            <td>10:05 – 10:55</td>
+            <td>Kindergarten</td>
+        </tr>
+        <tr>
+            <td colspan="2">Small reading groups: 12:20 – 2:55</td>
+        </tr>
+    </table>
+
+    <div class="back-home">
+        <a href="index.html">&larr; Back to Homepage</a>
+    </div>
+
+    <footer>
+        Viola Nicole Rose
+    </footer>
 
 </body>
 </html>
